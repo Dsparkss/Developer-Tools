@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="7" parallel="tests" name="Failed suite [Banking]" guice-stage="DEVELOPMENT">
+  <parameter name="object" value=" MY OWN CAR"/>
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <test thread-count="7" parallel="tests" name="Nopackage(failed)">
+    <classes>
+      <class name="test.da3">
+        <methods>
+          <include name="toy"/>
+          <include name="toy1"/>
+          <include name="toy2"/>
+        </methods>
+      </class> <!-- test.da3 -->
+    </classes>
+  </test> <!-- Nopackage(failed) -->
+</suite> <!-- Failed suite [Banking] -->

@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Banking">
+	<listeners>
+		
+		<listener class-name = "test.Listeners"/>
+	
+	</listeners>
+	<parameter name="object" value=" MY OWN CAR"/>
+  <test name="Nopackage" >
+    <classes>
+    	<class name="test.Extentreports"></class>
+       <class name="test.da3"> 
+      	 	<methods>
+       			<include name ="toy.*"></include>
+       		</methods>
+       	</class>
+       <class name= "test.da4">
+       		<methods >
+       			<include name="ha.*"></include>
+       		</methods>
+       </class>
+    </classes>
+  </test>
+  
+  <test name = "Booking">
+  <parameter name="parts" value="BUMPER"/>
+  	<classes>
+  		<class name="test.day5"></class>
+  		
+  	</classes>
+  
+  </test>
+</suite>
